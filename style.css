@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+}
+  ul li::before {
+    content: "✔";
+    color: green;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li:nth-last-of-type(7)::before {
+    content: "✖";
+    color: red;
+    display: inline-block; 
+}
+
+@media all and (min-width: 700px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 500px;
+    }
+}
+
